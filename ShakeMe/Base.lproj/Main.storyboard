@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="edosz.ttf">
+            <string>EdoSZ</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShakeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="CAt-SZ-1st">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Me" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN8-vH-aUL">
+                                <rect key="frame" x="16" y="20" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IjZ-C2-XeS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eep-Xh-k0y">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.98814105019999998" green="0.98640621630000003" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jkN-gO-PfJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="31"/>
+                                <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TPe-L7-ahe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TM-IX-Avg">
+                                <rect key="frame" x="16" y="128" width="343" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Dcp-jQ-ZiK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bq1-QP-REQ">
+                                <rect key="frame" x="16" y="532" width="343" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="ijB-ys-4H1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maracas1" translatesAutoresizingMaskIntoConstraints="NO" id="krv-qG-aYg">
+                                <rect key="frame" x="56" y="217" width="263" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="OwF-2Q-WX3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eep-Xh-k0y" firstAttribute="top" secondItem="bq1-QP-REQ" secondAttribute="bottom" constant="8" id="2Pd-ak-BNX"/>
+                            <constraint firstItem="CAt-SZ-1st" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4V4-kg-2xC"/>
+                            <constraint firstItem="0TM-IX-Avg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7I4-lP-fgv"/>
+                            <constraint firstItem="CAt-SZ-1st" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gq0-U5-bge"/>
+                            <constraint firstItem="GN8-vH-aUL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="I1c-93-BXq"/>
+                            <constraint firstItem="eep-Xh-k0y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IdD-nW-ZoL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="krv-qG-aYg" secondAttribute="trailing" constant="40" id="Liw-aF-7qP"/>
+                            <constraint firstItem="eep-Xh-k0y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Oob-cX-1Cz"/>
+                            <constraint firstItem="0TM-IX-Avg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SLq-nM-eZE"/>
+                            <constraint firstItem="bq1-QP-REQ" firstAttribute="top" secondItem="krv-qG-aYg" secondAttribute="bottom" constant="56" id="SYq-iv-SaU"/>
+                            <constraint firstItem="bq1-QP-REQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="UYw-Zj-45U"/>
+                            <constraint firstItem="krv-qG-aYg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="ZUt-en-26a"/>
+                            <constraint firstItem="GN8-vH-aUL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cLV-AU-zVF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eep-Xh-k0y" secondAttribute="bottom" constant="20" id="eD5-HK-z1O"/>
+                            <constraint firstAttribute="trailing" secondItem="CAt-SZ-1st" secondAttribute="trailing" id="ezy-EK-nx2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CAt-SZ-1st" secondAttribute="bottom" id="qwX-Yv-5S8"/>
+                            <constraint firstItem="0TM-IX-Avg" firstAttribute="top" secondItem="GN8-vH-aUL" secondAttribute="bottom" constant="8" id="tBh-S9-Myd"/>
+                            <constraint firstItem="GN8-vH-aUL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tcu-Hb-f9y"/>
+                            <constraint firstItem="bq1-QP-REQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xFI-n4-fVa"/>
+                            <constraint firstItem="krv-qG-aYg" firstAttribute="top" secondItem="0TM-IX-Avg" secondAttribute="bottom" constant="32" id="xQ2-jF-0VE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="krv-qG-aYg" id="I2m-Zs-rUc"/>
+                        <outlet property="scoreLabel" destination="bq1-QP-REQ" id="fv5-aL-Pop"/>
+                        <outlet property="startRestart" destination="eep-Xh-k0y" id="Zrc-RN-dLD"/>
+                        <outlet property="timerLabel" destination="0TM-IX-Avg" id="zah-dB-mrr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Maracas1" width="551" height="743"/>
+        <image name="beach" width="1920" height="1080"/>
+    </resources>
+</document>
